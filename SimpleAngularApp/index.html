@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app='mySimpleApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Simple AngularJS App</title>
+    </head>
+  <body>
+    <div ng-controller='MySimpleController'>
+      <h1>My First AngularJS application</h1>
+      <div>
+        Message Input :
+      <input id="myMessage" size="50" align="" type="text" ng-model="message" placeholder="This is my first AngularJS application">
+      <br><br>
+      <button ng-click="upperCaseMsg()">Click For UpperCase</button><br><br>
+        Message from Angular: {{message}}
+    </div>
+    </div>
+  </body>
+</html>
